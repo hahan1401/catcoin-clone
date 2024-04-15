@@ -1,15 +1,22 @@
-import BannerWrapper from "@/components/BannerWrapper";
 import CopyCodeMainSection from "@/components/CopyCodeMainSection";
+import CtaBoxsMain from "@/components/CtaBoxsMain";
+import FaqMain from "@/components/FaqMain";
 import Header from "@/components/Header";
 import StackersMain from "@/components/StickersMain";
+import TokenBoxsMain from "@/components/TokenBoxsMain";
+import WhatIsCatMain from "@/components/WhatIsCatMain";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <BannerWrapper />
       <StackersMain />
       <CopyCodeMainSection />
+      {/* <BannerWrapper /> */}
+      <WhatIsCatMain />
+      <CtaBoxsMain />
+      <FaqMain />
+      <TokenBoxsMain />
     </div>
   );
 }

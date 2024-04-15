@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         primary: "rgb(var(--color-primary) / <alpha-value>)",
         bg: "rgb(var(--color-bg) / <alpha-value>)",
+        gradientFrom: "rgb(219, 245, 224)",
+        gradientTo: "rgb(219, 227, 245)",
       },
       spacing: {
         2.5: "0.625rem",
