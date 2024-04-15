@@ -6,12 +6,12 @@ import styles from "./styles.module.scss";
 const Header = () => {
   return (
     <div className={`flex justify-between p-5 ${styles.headerWrapper}`}>
-      <Link href={"/"} className="text-xl font-bold">
+      <Link href={"/"} className="text-xl font-bold py-3 px-4.5">
         CATCOIN
       </Link>
-      <div className="flex gap-2.5">
+      <div className="flex gap-2.5 h-[45px]">
         <Link className="flex justify-between" href={"#"}>
-          <button className="text-lg font-bold relative py-3 px-[18px]">
+          <button className="text-lg font-bold relative py-3 px-4.5">
             How to Buy{" "}
             <FontAwesomeIcon
               icon={faArrowRight}
@@ -20,7 +20,7 @@ const Header = () => {
           </button>
         </Link>
         <Link className="flex justify-between" href={"#"}>
-          <button className="text-lg font-bold relative py-3 px-[18px]">
+          <button className="text-lg font-bold relative py-3 px-4.5">
             Tweet
             <FontAwesomeIcon
               icon={faArrowRight}
