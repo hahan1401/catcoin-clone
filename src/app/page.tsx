@@ -1,6 +1,7 @@
 import CopyCodeMainSection from "@/components/CopyCodeMainSection";
 import CtaBoxsMain from "@/components/CtaBoxsMain";
 import FaqMain from "@/components/FaqMain";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import StackersMain from "@/components/StickersMain";
 import TokenBoxsMain from "@/components/TokenBoxsMain";
@@ -17,6 +18,7 @@ export default function Home() {
       <CtaBoxsMain />
       <FaqMain />
       <TokenBoxsMain />
+      <Footer />
     </div>
   );
 }
