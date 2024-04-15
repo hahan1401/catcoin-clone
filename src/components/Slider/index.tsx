@@ -11,7 +11,7 @@ const Slider = ({
   data: any[];
   addPrefix?: boolean;
   addSurfix?: boolean;
-  renderChildren?: () => ReactNode;
+  renderChildren?: (src: string) => ReactNode;
 }) => {
   return (
     <div className="slider">
@@ -28,7 +28,13 @@ const Slider = ({
       >
         {data.map((item) => {
           return (
-            <>{renderChildren ? renderChildren() : <ItemDefaul src={item} />}</>
+            <>
+              {renderChildren ? (
+                renderChildren(item)
+              ) : (
+                <ItemDefaul src={item} />
+              )}
+            </>
           );
         })}
       </div>
