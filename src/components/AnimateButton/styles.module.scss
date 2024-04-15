@@ -1,0 +1,20 @@
+.button {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45px;
+    background: rgb(var(--color-primary));
+    border-radius: 45px;
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}

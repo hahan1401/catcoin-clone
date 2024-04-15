@@ -1,0 +1,40 @@
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+img {
+  max-width: unset;
+}
+
+
+.slider {
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 2;
+    width: 200px;
+    height: 200px;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 35s linear infinite;
+		display: flex;
+	}
+}
