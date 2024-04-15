@@ -5,7 +5,7 @@ const data = new Array(9).fill(0).map((_, index) => `/img/${index}.png`);
 
 const images = new Array(9)
   .fill(0)
-  .map((_, index) => `/img/${index}.png`)
+  .map((_, index) => `/img/${index + 1}.png`)
   .map((image) => ({
     id: crypto.randomUUID(),
     image,

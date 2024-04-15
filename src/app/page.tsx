@@ -1,3 +1,4 @@
+import BannerWrapper from "@/components/BannerWrapper";
 import CopyCodeMainSection from "@/components/CopyCodeMainSection";
 import CtaBoxsMain from "@/components/CtaBoxsMain";
 import FaqMain from "@/components/FaqMain";
@@ -11,14 +12,28 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <div className="max-w-[1280px] m-auto">
+        <BannerWrapper />
+      </div>
+      <div className="max-w-[1280px] m-auto">
+        <WhatIsCatMain />
+      </div>
+      <div className="max-w-[1280px] m-auto">
+        <CtaBoxsMain />
+      </div>
       <StackersMain />
-      <CopyCodeMainSection />
-      {/* <BannerWrapper /> */}
-      <WhatIsCatMain />
-      <CtaBoxsMain />
-      <FaqMain />
-      <TokenBoxsMain />
-      <LogoSliderMain />
+      <div className="max-w-[1280px] m-auto">
+        <FaqMain />
+      </div>
+      <div className="max-w-[1280px] m-auto">
+        <TokenBoxsMain />
+      </div>
+      <div className="max-w-[1280px] m-auto">
+        <CopyCodeMainSection />
+      </div>
+      <div className="max-w-[1280px] m-auto">
+        <LogoSliderMain />
+      </div>
     </div>
   );
 }
