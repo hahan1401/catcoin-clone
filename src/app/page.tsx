@@ -1,4 +1,5 @@
 import BannerWrapper from "@/components/BannerWrapper";
+import CopyCodeMainSection from "@/components/CopyCodeMainSection";
 import Header from "@/components/Header";
 import StackersMain from "@/components/StickersMain";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <BannerWrapper />
       <StackersMain />
+      <CopyCodeMainSection />
     </div>
   );
 }
