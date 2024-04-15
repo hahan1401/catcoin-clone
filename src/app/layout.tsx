@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import type { Metadata } from "next";
@@ -20,9 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <header>
-        <Header />
-      </header>
       <body className={`${inter.className} bg-bg max-w-[1280px] m-auto`}>
         {children}
       </body>

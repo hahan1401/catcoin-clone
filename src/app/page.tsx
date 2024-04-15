@@ -1,3 +1,11 @@
+import Header from "@/components/Header";
+import BannerWrapper from "@/components/Header/BannerWrapper";
+
 export default function Home() {
-  return <main>asda</main>;
+  return (
+    <div>
+      <Header />
+      <BannerWrapper />
+    </div>
+  );
 }
