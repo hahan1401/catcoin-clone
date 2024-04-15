@@ -9,9 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: 'rgb(var(--color-primary) / <alpha-value>)',
-        bg: 'rgb(var(--color-bg) / <alpha-value>)'
-      }
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
+        bg: "rgb(var(--color-bg) / <alpha-value>)",
+      },
+      spacing: {
+        2.5: "0.625rem",
+      },
+      fontSize: {
+        lg: ["1.125rem", { lineHeight: "1.3125rem" }],
+      },
     },
   },
   plugins: [],

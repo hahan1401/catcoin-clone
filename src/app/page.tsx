@@ -1,7 +1,11 @@
+import Header from "@/components/Header";
+
 export default function Home() {
   return (
     <main>
-      <header className="flex justify-between"></header>
+      <header>
+        <Header />
+      </header>
     </main>
   );
 }
