@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Plus } from "../ui/icons";
 import styles from "./styles.module.scss";
+
 const data = [
   {
     title: "How much Tax to buy ?",
@@ -27,6 +28,8 @@ const FaqMain = () => {
     setCheck(i);
   };
 
+  const [a, setA] = useState(false);
+
   return (
     <div className="py-[60px] max-w-[1280px]">
       <div className="mx-auto max-w-[600px]">
@@ -40,6 +43,7 @@ const FaqMain = () => {
         {data?.map((item, i) => {
           return (
             <div
+              key={i}
               className="bg-yellow-500 bg-opacity-20 rounded-[20px] my-[10px]"
               onClick={() => {
                 toggle(i);
@@ -57,11 +61,11 @@ const FaqMain = () => {
               </div>
 
               <div
-                className={`p-[20px] ${
-                  check === i ? styles.show : styles.content
-                } `}
+                className={`${styles.content} ${
+                  check === i ? "" : styles.closed
+                }`}
               >
-                {item?.content}
+                {item?.content && <p className="p-5">{item?.content}</p>}
               </div>
             </div>
           );
