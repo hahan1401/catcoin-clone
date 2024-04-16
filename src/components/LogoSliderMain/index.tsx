@@ -18,32 +18,32 @@ const LogoSliderMain = () => {
         addSurfix={true}
         renderChildren={renderItem}
       /> */}
-      <Banner images={images} speed={5000} />
+      <Banner images={images} />
     </div>
   );
 };
 
 export default LogoSliderMain;
 
-const Banner = ({ images, speed = 1000 }) => {
+const Banner = ({ images }) => {
   return (
     <div className="inner">
       <div className="wrapper">
-        <section style={{ "--speed": `${speed}ms` }}>
+        <section>
           {images.map(({ id, image }) => (
             <div className="image" key={id}>
               <img src={image} alt={id} />
             </div>
           ))}
         </section>
-        <section style={{ "--speed": `${speed}ms` }}>
+        <section>
           {images.map(({ id, image }) => (
             <div className="image" key={id}>
               <img src={image} alt={id} />
             </div>
           ))}
         </section>
-        <section style={{ "--speed": `${speed}ms` }}>
+        <section>
           {images.map(({ id, image }) => (
             <div className="image" key={id}>
               <img src={image} alt={id} />

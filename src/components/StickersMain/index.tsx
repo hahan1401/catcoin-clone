@@ -15,7 +15,7 @@ const StackersMain = () => {
   return (
     <div className="text-center py-[30px] sm:py-[60px] stickers-main-wrapper">
       <SectionHeader title="Trending $CAT stickers" />
-      <Banner images={images} speed={5000} />
+      <Banner images={images} />
 
       <div className="inline-block">
         <Link
@@ -30,25 +30,25 @@ const StackersMain = () => {
   );
 };
 
-const Banner = ({ images, speed = 1000 }) => {
+const Banner = ({ images }) => {
   return (
     <div className="inner">
       <div className="wrapper">
-        <section style={{ "--speed": `${speed}ms` }}>
+        <section>
           {images.map(({ id, image }) => (
             <div className="image" key={id}>
               <img src={image} alt={id} />
             </div>
           ))}
         </section>
-        <section style={{ "--speed": `${speed}ms` }}>
+        <section>
           {images.map(({ id, image }) => (
             <div className="image" key={id}>
               <img src={image} alt={id} />
             </div>
           ))}
         </section>
-        <section style={{ "--speed": `${speed}ms` }}>
+        <section>
           {images.map(({ id, image }) => (
             <div className="image" key={id}>
               <img src={image} alt={id} />
