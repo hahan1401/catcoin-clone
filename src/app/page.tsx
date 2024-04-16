@@ -2,6 +2,7 @@ import BannerWrapper from "@/components/BannerWrapper";
 import CopyCodeMainSection from "@/components/CopyCodeMainSection";
 import CtaBoxsMain from "@/components/CtaBoxsMain";
 import FaqMain from "@/components/FaqMain";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import LogoSliderMain from "@/components/LogoSliderMain";
 import StackersMain from "@/components/StickersMain";
@@ -33,6 +34,9 @@ export default function Home() {
       </div>
       <div className="max-w-[1280px] m-auto">
         <LogoSliderMain />
+      </div>
+      <div className="max-w-[1280px] m-auto">
+        <Footer />
       </div>
     </div>
   );
