@@ -1,7 +1,4 @@
-import Image from "next/image";
-import "./styles.css";
-
-const data = new Array(9).fill(0).map((_, index) => `/img/${index}.png`);
+import "./styles.scss";
 
 const images = new Array(9)
   .fill(0)
@@ -12,25 +9,8 @@ const images = new Array(9)
   }));
 
 const LogoSliderMain = () => {
-  const renderItem = (src: string) => {
-    return (
-      <div className="slide w-[120px] h-[40px] m-5">
-        <Image
-          src={src}
-          alt="thumbnail"
-          width={120}
-          height={40}
-          style={{
-            objectFit: "contain",
-            width: 120,
-            height: 40,
-          }}
-        />
-      </div>
-    );
-  };
   return (
-    <div className="py-[30px] sm:py-[60px]">
+    <div className="py-[30px] sm:py-[60px] logo-slider-main-wrapper">
       <p className="text-center">Loved by the community</p>
       {/* <Slider
         data={data}

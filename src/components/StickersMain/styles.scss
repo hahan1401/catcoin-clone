@@ -1,0 +1,40 @@
+.stickers-main-wrapper {
+  img {
+    width: 240px;
+    height: 200px;
+    margin: 20px;
+    object-fit: contain;
+    max-width: unset;
+  }
+
+  img:last-of-type {
+    padding-left: 0;
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 240px;
+  }
+
+  .wrapper {
+    position: absolute;
+    display: flex;
+  }
+
+  section {
+    display: flex;
+    animation: swipe 15s linear infinite backwards;
+  }
+
+  @keyframes swipe {
+    0% {
+      transform: translate(0);
+    }
+
+    100% {
+      transform: translate(-100%);
+    }
+  }
+}
